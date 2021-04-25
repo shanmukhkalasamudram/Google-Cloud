@@ -1,0 +1,191 @@
+Connected, host fingerprint: ssh-rsa 0 03:92:59:D3:A3:A3:8C:F0:A8:79:55:FD:C2:2F:1E:34:94:9C:CE:D2:0B:C9:4E:EC:A6:31:AC:95:A8:A6:9C:7C
+Linux instance-1 4.19.0-11-cloud-amd64 #1 SMP Debian 4.19.146-1 (2020-09-17) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Creating directory '/home/student-01-0ad463777734'.
+student-01-0ad463777734@instance-1:~$ cat/proc/cpuinfo
+-bash: cat/proc/cpuinfo: No such file or directory
+student-01-0ad463777734@instance-1:~$ cat /proc/cpuinfo
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 63
+model name      : Intel(R) Xeon(R) CPU @ 2.30GHz
+stepping        : 0
+microcode       : 0x1
+cpu MHz         : 2300.000
+cache size      : 46080 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat md_clear arch_capabilities
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs
+bogomips        : 4600.00
+
+
+
+Hit:1 http://deb.debian.org/debian buster InRelease
+Get:2 http://deb.debian.org/debian buster-updates InRelease [51.9 kB]          
+Get:3 http://deb.debian.org/debian buster-backports InRelease [46.7 kB]        
+Get:4 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+Get:5 http://packages.cloud.google.com/apt cloud-sdk-buster InRelease [6384 B] 
+Get:6 http://packages.cloud.google.com/apt google-cloud-packages-archive-keyring-buster InRelease [3874 B]
+Get:7 http://packages.cloud.google.com/apt google-compute-engine-buster-stable I
+nRelease [3841 B]
+Get:8 http://deb.debian.org/debian buster-updates/main Sources.diff/Index [4180 
+B]
+Get:9 http://deb.debian.org/debian buster-updates/main amd64 Packages.diff/Index
+ [4180 B]
+Get:10 http://deb.debian.org/debian buster-updates/main Sources 2020-10-24-2001.
+35.pdiff [414 B]
+Get:10 http://deb.debian.org/debian buster-updates/main Sources 2020-10-24-2001.
+35.pdiff [414 B]
+Get:11 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-10-2
+4-2001.35.pdiff [286 B]
+Get:11 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-10-2
+4-2001.35.pdiff [286 B]
+Get:12 http://deb.debian.org/debian buster-backports/main Sources.diff/Index [27
+.8 kB]
+Get:13 http://deb.debian.org/debian buster-backports/main amd64 Packages.diff/In
+dex [27.8 kB]
+Get:14 http://deb.debian.org/debian buster-backports/main Translation-en.diff/In
+dex [27.8 kB]
+Get:15 http://deb.debian.org/debian buster-backports/main Sources 2020-10-12-200
+9.30.pdiff [637 B]
+Get:16 http://deb.debian.org/debian buster-backports/main Sources 2020-10-13-020
+5.04.pdiff [33 B]
+Get:17 http://deb.debian.org/debian buster-backports/main Sources 2020-10-13-201
+3.49.pdiff [756 B]
+Get:18 http://deb.debian.org/debian buster-backports/main Sources 2020-10-14-021
+student-01-0ad463777734@instance-1:~$ sudo apt-get install python-mpltoolkits.ba
+semap
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  blt fontconfig-config fonts-lyx javascript-common libblas3 libfontconfig1
+  libgeos-3.7.1 libgeos-c1v5 libgfortran5 libimagequant0 libjbig0
+  libjpeg62-turbo libjs-jquery libjs-jquery-ui liblapack3 liblcms2-2 libproj13
+  libpython-stdlib libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libquadmath0 libtcl8.6 libtiff5 libtk8.6 libwebp6 libwebpdemux2 libwebpmux3
+  libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxft2 libxrender1
+  libxss1 proj-data python python-asn1crypto
+  python-backports.functools-lru-cache python-cffi-backend python-cheetah
+  python-cryptography python-cycler python-dap python-dateutil
+  python-dnspython python-enum34 python-formencode python-httplib2
+  python-ipaddress python-kiwisolver python-matplotlib python-matplotlib2-data
+  python-minimal python-mpltoolkits.basemap-data python-numpy python-olefile
+  python-openid python-openssl python-paste python-pastedeploy
+  python-pastedeploy-tpl python-pastescript python-pil python-pkg-resources
+  python-pyparsing python-pyproj python-pyshp python-scgi python-setuptools
+  python-six python-subprocess32 python-tempita python-tk python-tz python2
+  python2-minimal python2.7 python2.7-minimal tk8.6-blt2.5 ttf-bitstream-vera
+  x11-common
+
+
+student-01-0ad463777734@instance-1:~$ git --version
+git version 2.20.1
+student-01-0ad463777734@instance-1:~$ git clone https://github.com/GoogleCloudPl
+atform/training-data-analyst
+Cloning into 'training-data-analyst'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 43318 (delta 6), reused 0 (delta 0), pack-reused 43303
+Receiving objects: 100% (43318/43318), 465.18 MiB | 33.21 MiB/s, done.
+Resolving deltas: 100% (27126/27126), done.
+Checking out files: 100% (9093/9093), done.
+student-01-0ad463777734@instance-1:~$ cd training-data-analyst/CPB100/lab2b
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ less in
+gest.sh
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ bash in
+gest.sh
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  wget
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 902 kB of archives.
+After this operation, 3335 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian buster/main amd64 wget amd64 1.20.1-1.1 [902 
+kB]
+Fetched 902 kB in 0s (3093 kB/s)
+Selecting previously unselected package wget.
+(Reading database ... 45883 files and directories currently installed.)
+Preparing to unpack .../wget_1.20.1-1.1_amd64.deb ...
+Unpacking wget (1.20.1-1.1) ...
+Setting up wget (1.20.1-1.1) ...
+Processing triggers for man-db (2.8.5-2) ...
+--2020-10-28 18:28:00--  http://earthquake.usgs.gov/earthquakes/feed/v1.0/summar
+y/all_week.csv
+Resolving earthquake.usgs.gov (earthquake.usgs.gov)... 13.249.93.98, 13.249.93.9
+, 13.249.93.65, ...
+Connecting to earthquake.usgs.gov (earthquake.usgs.gov)|13.249.93.98|:80... conn
+ected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.csv
+ [following]
+--2020-10-28 18:28:00--  https://earthquake.usgs.gov/earthquakes/feed/v1.0/summa
+ry/all_week.csv
+Connecting to earthquake.usgs.gov (earthquake.usgs.gov)|13.249.93.98|:443... con
+nected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘earthquakes.csv’
+earthquakes.csv         [ <=>                ] 404.54K  --.-KB/s    in 0.04s   
+2020-10-28 18:28:00 (9.80 MB/s) - ‘earthquakes.csv’ saved [414246]
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ bash in
+stall_missing.sh
+Hit:1 http://security.debian.org/debian-security buster/updates InRelease
+Hit:2 http://deb.debian.org/debian buster InRelease
+Hit:3 http://deb.debian.org/debian buster-updates InRelease
+Hit:4 http://deb.debian.org/debian buster-backports InRelease
+Hit:5 http://packages.cloud.google.com/apt cloud-sdk-buster InRelease
+Hit:6 http://packages.cloud.google.com/apt google-cloud-packages-archive-keyring
+-buster InRelease
+Hit:7 http://packages.cloud.google.com/apt google-compute-engine-buster-stable I
+nRelease
+Reading package lists... Done
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ python3
+ transform.py
+{'timestamp': '2020-10-28T18:21:44.085Z', 'lat': 61.1196, 'lon': -147.6415, 'mag
+nitude': 1.8}
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ ls -l
+total 748
+-rw-r--r-- 1 student-01-0ad463777734 google-sudoers    637 Oct 28 18:26 commands
+.sh
+-rw-r--r-- 1 student-01-0ad463777734 google-sudoers 414246 Oct 28 18:27 earthqua
+kes.csv
+-rw-r--r-- 1 student-01-0ad463777734 google-sudoers    751 Oct 28 18:26 earthqua
+kes.htm
+-rw-r--r-- 1 student-01-0ad463777734 google-sudoers 322898 Oct 28 18:29 earthqua
+kes.png
+-rwxr-xr-x 1 student-01-0ad463777734 google-sudoers    786 Oct 28 18:26 ingest.s
+h
+-rwxr-xr-x 1 student-01-0ad463777734 google-sudoers    707 Oct 28 18:26 install_
+missing.sh
+drwxr-xr-x 2 student-01-0ad463777734 google-sudoers   4096 Oct 28 18:26 schedule
+d
+-rwxr-xr-x 1 student-01-0ad463777734 google-sudoers   3058 Oct 28 18:26 transfor
+m.py
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ gsutil cp e
+arthquakes.* gs://qwiklabs-gcp-01-731b4e37844a/earthquakes/
+Copying file://earthquakes.csv [Content-Type=text/csv]...
+Copying file://earthquakes.htm [Content-Type=text/html]...                      
+Copying file://earthquakes.png [Content-Type=image/png]...                      
+- [3 files][720.6 KiB/720.6 KiB]                                                
+Operation completed over 3 objects/720.6 KiB.                                    
+student-01-0ad463777734@instance-1:~/training-data-analyst/CPB100/lab2b$ exit
